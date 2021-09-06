@@ -1,4 +1,4 @@
-name: amazonRDP
+name: Win10RDP
 
 on: workflow_dispatch
 
