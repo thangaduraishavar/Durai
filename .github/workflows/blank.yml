@@ -1,4 +1,4 @@
-name: Win10RDP
+name: Win10R
 
 on: workflow_dispatch
 
@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: Downloading Ngrok.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/msraj1584/msrajserv/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/msraj1584/msrajserv/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/main/start.bat -OutFile start.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
